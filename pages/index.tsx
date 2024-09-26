@@ -285,8 +285,8 @@ export default function Home(props: Props) {
 
         const bridging = prepareContractCall({
             contract: pickContractBridge,
-            method: "function bridge(address to, uint256 amount) external returns (uint256 txId)",
-            params: [walletAddr, parseUnits(usdcValue.toString())],
+            method: "function bridge(address to, uint256 amount, bytes calldata data) external returns (uint256 txId)",
+            params: [walletAddr, parseUnits(usdcValue.toString()), "0x0"],
         });
 
         try {

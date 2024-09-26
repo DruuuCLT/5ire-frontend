@@ -11,12 +11,12 @@ export default class Document extends NextDocument {
                 <Head>
                     <link
                         rel="apple-touch-icon"
-                        href="https://usdc-frontend-autonity.vercel.app/favicon.ico"
+                        href="https://5ire-frontend.vercel.app/favicon.ico"
                     />
                     <link
                         rel="icon"
                         type="image/x-icon"
-                        href="https://usdc-frontend-autonity.vercel.app/favicon.ico"
+                        href="https://5ire-frontend.vercel.app/favicon.ico"
                     />
                 </Head>
                 <body>

@@ -1,9 +1,9 @@
 import { defineChain, createThirdwebClient } from "thirdweb";
-import { Chain, polygonAmoy } from "thirdweb/chains";
+import { Chain, arbitrumSepolia } from "thirdweb/chains";
 
 const integrationChain = defineChain({
-    id: 65100003,
-    rpc: "https://rpc1.piccadilly.autonity.org",
+    id: 997,
+    rpc: "https://rpc.testnet.5ire.network",
 });
 
 export const twClient = createThirdwebClient({
@@ -16,29 +16,29 @@ import VIA_A from "./abis/via";
 
 export { USDC_A as USDC_ABI, FIAT_TOKEN_A as FIAT_TOKEN_ABI, VIA_A as VIA_ABI };
 
-export const SOURCE_CHAIN: Chain = polygonAmoy;
+export const SOURCE_CHAIN: Chain = arbitrumSepolia;
 // export const SOURCE_CHAIN_RPC: string = PolygonAmoyTestnet.rpc[0];
-export const SOURCE_CHAIN_ID: number = polygonAmoy.id;
-export const SOURCE_CHAIN_NAME: string = "Polygon Amoy";
+export const SOURCE_CHAIN_ID: number = arbitrumSepolia.id;
+export const SOURCE_CHAIN_NAME: string = "Arbitrum Sepolia";
 export const SOURCE_USDC_TOKEN_CONTRACT: string =
-    "0xD464CC7367a7A39eb4b1E6643CDa262B0B0CfdA8";
-export const SOURCE_USDC_TOKEN_NAME: string = "mUSDC";
+    "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d";
+export const SOURCE_USDC_TOKEN_NAME: string = "USDC";
 
 export const INTEGRATION_CHAIN: Chain = integrationChain;
 // export const INTEGRATION_CHAIN_RPC: string =
 //     integrationChain.rpc[0];
 export const INTEGRATION_CHAIN_ID: number = integrationChain.id;
-export const INTEGRATION_CHAIN_NAME: string = "Autonity Piccadilly";
+export const INTEGRATION_CHAIN_NAME: string = "5ire";
 export const INTEGRATION_USDC_TOKEN_CONTRACT: string =
-    "0x3a60C03a86eEAe30501ce1af04a6C04Cf0188700";
-export const INTEGRATION_USDC_TOKEN_NAME: string = "USDC.pol";
+    "0x84126A2D8dF65Bb32E6952c351f877E59e02a17f";
+export const INTEGRATION_USDC_TOKEN_NAME: string = "tUSDC.arb";
 
-export const INTEGRATION_BRAND_NAME: string = "Autonity";
+export const INTEGRATION_BRAND_NAME: string = "5ire";
 
 export const SOURCE_MESSAGING_CONTRACT: string =
-    "0xECE482610689d3bc8cf360F29cEf237AB8BE64D4";
+    "0x448811d70486296d4e2B60E4258328957C94EaA7";
 export const INTEGRATION_MESSAGING_CONTRACT: string =
-    "0xB0f652534837203b5FBE126c4E7DB128DB9F9736";
+    "0x28d03e97e68Fb138a2318A2627806dfAF9972755";
 
 export const LOGO_URL: string =
-    "https://usdc-frontend-autonity.vercel.app/images/logo-white.png";
+    "https://5ire-frontend.vercel.app/images/logo-white.png";
